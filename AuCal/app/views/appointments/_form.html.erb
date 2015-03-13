@@ -21,7 +21,6 @@
   </div>
   <div class="field">
     <%=f.label :librarian %>
-    <%= f.select :librarian_email, options_for_select(%w[Librarian1 Librarian2 Librarian3]) %>
     <%= f.collection_select(:librarian_email, Librarian.all, :id, :name) %>
   <br/>
   <div class="actions">
