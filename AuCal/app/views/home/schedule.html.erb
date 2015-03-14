@@ -1,6 +1,14 @@
-<h1>Schedule Appointment</h1>
-<form>
-Time:
-Day:
-Librarian:
-</form>
+<%= form_tag do %>
+  <%= label_tag(:time,"Time: ")%>
+  <%= text_field_tag(:time)%>
+  <%= label_tag(:day, "Date: ") %> <!-- Get JS date picker-->
+  <%= text_field_tag(:day)%>
+  <%= label_tag(:lib, "Librarian: ")%> <!-- make drop down of librarians --> 
+  <%= text_field_tag(:lib)%>
+<% end %>
+
+
+<script type="text/javascript">
+$('.datepicker').datepicker()
+</script>
+
