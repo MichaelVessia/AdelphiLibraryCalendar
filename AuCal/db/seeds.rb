@@ -9,4 +9,5 @@
 lib = Librarian.new
 lib.name = "TestLibrarian"
 lib.email = "AUcalendarTest@gmail.com"
+lib.description = "I am the head librarian at Adelphi University"
 lib.save!

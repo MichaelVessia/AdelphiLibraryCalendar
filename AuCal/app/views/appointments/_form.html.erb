@@ -20,8 +20,8 @@
     <%= f.date_select :day %>
   </div>
   <div class="field">
-    <%=f.label :librarian_email%>
-    <%= f.text_field :librarian_email%>
+    <%=f.label :librarian %>
+    <%= f.collection_select(:librarian_email, Librarian.all, :id, :name) %>
   <br/>
   <div class="actions">
     <%= f.submit "Create Appointment", class: 'btn btn-primary' %>

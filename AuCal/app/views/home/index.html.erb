@@ -1,7 +1,134 @@
- <div class="jumbotron" style="background-image: url(http://libraries.adelphi.edu/files/2014/03/Header6.jpg); background-size: cover; ">
+<style> 
+
+
+
+
+
+
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
+body { padding-top: 60px; }
+.nav.nav-justified > li > a { position: relative; }
+.nav.nav-justified > li > a:hover,
+.nav.nav-justified > li > a:focus { background-color: transparent; }
+.nav.nav-justified > li > a > .quote {
+	position: absolute;
+	left: 0px;
+	top: 0;
+	opacity: 0;
+	width: 30px;
+	height: 30px;
+	padding: 5px;
+	background-color: #13c0ba;
+	border-radius: 15px;
+	color: #fff;  
+}
+.nav.nav-justified > li.active > a > .quote { opacity: 1; }
+.nav.nav-justified > li > a > img { box-shadow: 0 0 0 5px #13c0ba; }
+.nav.nav-justified > li > a > img { 
+	max-width: 100%; 
+	opacity: .3; 
+	-webkit-transform: scale(.8,.8);
+	transform: scale(.8,.8);
+	-webkit-transition: all 0.3s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	transition: all 0.3s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.nav.nav-justified > li.active > a > img,
+.nav.nav-justified > li:hover > a > img,
+.nav.nav-justified > li:focus > a > img { 
+	opacity: 1; 
+	-webkit-transform: none;
+	transform: none;
+	-webkit-transition: all 0.3s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	transition: all 0.3s 0s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.tab-pane .tab-inner { padding: 30px 0 20px; }
+
+@media (min-width: 768px) {
+	.nav.nav-justified > li > a > .quote {
+		left: auto;
+		top: auto;
+		right: 20px;
+		bottom: 0px;
+	}  
+}
+
+
+
+
+
+
+
+
+
+</style>
+<div class="jumbotron" style="background-image: url(http://libraries.adelphi.edu/files/2014/03/Header6.jpg); background-size: cover; ">
 	<h1>Welcome!</h1>
 	<p>Here you can schedule an appointment with any of our librarians.</p>
 	<p><%= link_to 'Schedule an appointment', new_appointment_path, class: 'btn btn-success btn-lg' %></p>
 </div>
 
+
+<div class="[ container text-center ]">
+	<div class="[ row ]">
+		<div class="[ col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 ]" role="tabpanel">
+			<div class="[ col-xs-4 col-sm-12 ]">
+				<!-- Nav tabs -->
+				<ul class="[ nav nav-justified ]" id="nav-tabs" role="tablist">
+					<li role="presentation" class="active">
+						<a href="#dustin" aria-controls="dustin" role="tab" data-toggle="tab">
+							<img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/dustinlamont/128.jpg" />
+							<span class="quote"><i class="fa fa-quote-left"></i></span>
+						</a>
+					</li>
+					<li role="presentation" class="">
+						<a href="#daksh" aria-controls="daksh" role="tab" data-toggle="tab">
+							<img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/dakshbhagya/128.jpg" />
+							<span class="quote"><i class="fa fa-quote-left"></i></span>
+						</a>
+					</li>
+					<li role="presentation" class="">
+						<a href="#anna" aria-controls="anna" role="tab" data-toggle="tab">
+							<img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/annapickard/128.jpg" />
+							<span class="quote"><i class="fa fa-quote-left"></i></span>
+						</a>
+					</li>
+					<li role="presentation" class="">
+						<a href="#wafer" aria-controls="wafer" role="tab" data-toggle="tab">
+							<img class="img-circle" src="https://s3.amazonaws.com/uifaces/faces/twitter/waferbaby/128.jpg" />
+							<span class="quote"><i class="fa fa-quote-left"></i></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="[ col-xs-8 col-sm-12 ]">
+				<!-- Tab panes -->
+				<div class="tab-content" id="tabs-collapse">            
+					<div role="tabpanel" class="tab-pane fade in active" id="dustin">
+						<div class="tab-inner">                    
+							<p class="lead">I am a librarian at Adelphi University.</p>
+							<hr>
+							<p><strong class="text-uppercase">Librarian One</strong></p>
+							<p><em class="text-capitalize"> Senior librarian</em> at <a href="http://www.adelphi.edu">Adelphi University</a></p>                 
+						</div>
+					</div>
+
+					<div role="tabpanel" class="tab-pane fade" id="daksh">
+						<div class="tab-inner">
+							<p class="lead">Suspendisse dictum gravida est, nec consequat tortor venenatis a. Suspendisse vitae venenatis sapien.</p>
+							<hr>
+							<p><strong class="text-uppercase">Daksh Bhagya</strong></p>
+							<p><em class="text-capitalize"> UX designer</em> at <a href="#">Google</a></p>
+						</div>
+					</div>
+
+					<div role="tabpanel" class="tab-pane fade" id="anna">
+						<div class="tab-inner">
+							<p class="lead">Nullam suscipit ante ac arcu placerat, nec sagittis quam volutpat. Vestibulum aliquam facilisis velit ut ultrices.</p>
+							<hr>
+							<p><strong class="text-uppercase">Anna Pickard</strong></p>
+							<p><em class="text-capitalize"> Master web developer</em> at <a href="#">Intel</a></p>
+						</div> 
+					</div>
+
+					<div role="tabpanel" class="tab-pane fade
 
