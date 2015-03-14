@@ -5,5 +5,4 @@ class HomeController < ApplicationController
 	def schedule
 		render 'schedule.html.erb'
 	end
-
 end

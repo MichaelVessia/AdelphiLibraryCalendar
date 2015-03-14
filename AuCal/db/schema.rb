@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150314055041) do
+ActiveRecord::Schema.define(version: 20150314075052) do
 
   create_table "appointments", force: :cascade do |t|
     t.time     "time"
@@ -19,6 +19,11 @@ ActiveRecord::Schema.define(version: 20150314055041) do
     t.datetime "created_at",                  null: false
     t.datetime "updated_at",                  null: false
     t.string   "librarian_email", limit: 255
+  end
+
+  create_table "calendars", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "librarians", force: :cascade do |t|

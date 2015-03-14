@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   root 'home#index'
 
   get 'home/schedule'
+
+ # get 'home/calendar'
 end
