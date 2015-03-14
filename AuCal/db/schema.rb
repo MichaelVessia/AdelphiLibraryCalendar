@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150314055041) do
+ActiveRecord::Schema.define(version: 20150314061608) do
 
   create_table "appointments", force: :cascade do |t|
     t.time     "time"
@@ -27,6 +27,12 @@ ActiveRecord::Schema.define(version: 20150314055041) do
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
     t.text     "description", limit: 65535
+  end
+
+  create_table "tokens", force: :cascade do |t|
+    t.string   "access_token", limit: 255
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
 
   create_table "users", force: :cascade do |t|

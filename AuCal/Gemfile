@@ -40,6 +40,16 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'devise', '~> 3.4.1' #database authen
 gem 'bootstrap-sass', '~> 3.3.3'
+gem 'nifty-generators'
+gem 'omniauth', '~> 1.2.2'
+gem 'omniauth-google-oauth2'
+gem 'google-api-client', :require => 'google/api_client'
+gem 'rest-client', '~> 1.7.3'
+#gem 'google-api-client', :require => 'google/api_client'
+#gem 'omniauth', '1.1.1'
+#gem 'omniauth-google-oauth2', :git => 'https://github.com/zquestz/omniauth-google-oauth2.git'
+
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
