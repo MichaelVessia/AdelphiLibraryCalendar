@@ -17,7 +17,7 @@
       <tr>
         <td><%= appointment.time %></td>
         <td><%= appointment.day %></td>
-        <td><%= appointment.libId %></td>
+        <td><%= appointment.librarian_email %></td>
         <td><%= link_to 'Show', appointment %></td>
         <td><%= link_to 'Edit', edit_appointment_path(appointment) %></td>
         <td><%= link_to 'Destroy', appointment, method: :delete, data: { confirm: 'Are you sure?' } %></td>

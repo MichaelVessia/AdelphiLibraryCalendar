@@ -19,7 +19,11 @@
     <%= f.label :day %><br>
     <%= f.date_select :day %>
   </div>
+  <div class="field">
+    <%=f.label :librarian_email%>
+    <%= f.text_field :librarian_email%>
+  <br/>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit "Create Appointment", class: 'btn btn-primary' %>
   </div>
 <% end %>
