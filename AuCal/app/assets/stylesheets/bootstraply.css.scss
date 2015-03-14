@@ -10,4 +10,15 @@
 }
 
 
+.nav a:hover {
+	color : #FF0000 !important;
+	&:hover { background-color:white; }
+}
+
+.navbar-header a:hover {
+	color : #FF0000 !important;
+	&:hover { background-color:white; }
+}
+
+
 
