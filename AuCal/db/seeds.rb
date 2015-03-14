@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+lib = Librarian.new
+lib.name = "TestLibrarian"
+lib.email = "AUcalendarTest@gmail.com"
+lib.save!
