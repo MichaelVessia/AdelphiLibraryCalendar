@@ -12,5 +12,6 @@ Rails.application.routes.draw do
   resources :sessions, only: :index
   get "/auth/:provider/callback" => 'sessions#create'
 
+  get 'calendar/index'
 
 end

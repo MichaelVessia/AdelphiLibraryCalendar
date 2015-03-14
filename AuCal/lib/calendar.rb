@@ -1,3 +1,5 @@
-require 'rest_client'
+#require 'rest_client'
 
-RestClient.get 'https://www.googleapis.com/calendar/v3/POST/users/me/calendarList'
+#response = RestClient.get 'https://www.googleapis.com/calendar/v3/POST/users/me/calendarList'
+
+puts "Hello world"
