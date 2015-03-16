@@ -12,9 +12,9 @@ This web application made with *Ruby on Rails* will allow Adelphi University Stu
 
 - Appointment scheduling is connected to our *Appointment Database*
 
-- Coming soon: *Google Calendar* integration.  We have the authentication set up, we just need to add the API calls.
+- TODO: *Google Calendar* integration. Authentication has been added, but the actual API calls still need to be implemented.
 
-- Coming soon: *eCampus* login integration
+- TODO: *eCampus* login integration
     
 ###Technologies Used
 - Ruby on Rails
